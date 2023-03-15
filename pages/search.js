@@ -6,7 +6,7 @@ import SearchResults from "../components/SearchResults";
 import { API_KEY, CONTEXT_KEY } from '../key';
 import Response from "../Response";
 
-function search({results}) {
+function Search({results}) {
     const router = useRouter();
 
     console.log(results);
@@ -23,7 +23,7 @@ function search({results}) {
     )
 }
 
-export default search;
+export default Search;
 
 export async function getServerSideProps(context) {
     const useDummyData = false;
