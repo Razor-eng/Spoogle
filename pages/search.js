@@ -1,5 +1,4 @@
 import Head from "next/head"
-import { useRouter } from "next/router";
 import Footer from "../components/Footer";
 import Header from "../components/Header"
 import SearchResults from "../components/SearchResults";
@@ -7,15 +6,10 @@ import { API_KEY, CONTEXT_KEY } from '../key';
 import Response from "../Response";
 
 function search({results}) {
-    const router = useRouter();
 
     console.log(results);
     return (
         <div>
-            <Head>
-                <title>{router.query.term} - Spoogle Search</title>
-                <link rel="icon" href="/" />
-            </Head>
             <Header/>
             <SearchResults results={results}/>
             <Footer/>
