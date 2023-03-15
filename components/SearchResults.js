@@ -1,4 +1,3 @@
-import React from 'react'
 import PaginationButtons from './PaginationButtons'
 
 function SearchResults({ results }) {
