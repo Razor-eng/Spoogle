@@ -9,7 +9,7 @@ function Header() {
     const router = useRouter();
     const searchInputRef = useRef(null);
 
-    const search = (e) => {
+    const Search = (e) => {
         e.preventDefault();
         const term = searchInputRef.current.value;
 
@@ -24,7 +24,7 @@ function Header() {
                     <input ref={searchInputRef} type="text" className="flex-grow w-full focus:outline-none" defaultValue={router.query.term} />
                     <XIcon height={23} className="h-7 sm:mr-3 cursor-pointer icon transiton duration-100 transform hover:scale-125 text-gray-500" onClick={()=> (searchInputRef.current.value="")}/>
                     <SearchIcon height={27} className="mr-3 h-6 hidden sm:inline-flex text-blue-500 border-l-2 pl-4 border-gray-300 transiton duration-100 transform hover:scale-125" />
-                    <button hidden type="submit" onClick={search}>Search</button>
+                    <button hidden type="submit" onClick={Search}>Search</button>
                 </form>
                 <Avatar url="https://i.pinimg.com/564x/73/af/0c/73af0c0389795511117949da29f3079c.jpg"/>
             </div>

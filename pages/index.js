@@ -10,7 +10,7 @@ export default function Home() {
   const router = useRouter();
   const searchInputRef = useRef(null);
 
-  const search = (e) => {
+  const Search = (e) => {
     e.preventDefault();
     const term = searchInputRef.current.value;
 
@@ -48,8 +48,8 @@ export default function Home() {
           <MicrophoneIcon className='h-5' />
         </div>
         <div className='flex flex-col w-1/2 space-y-2 justify-center mt-8 sm:space-y-0 sm:flex-row sm:space-x-4'>
-          <button onClick={search} className="bg-blue-100 p-3 rounded-md ring-gray-200 text-sm text-gray-800 hover:ring-1 focus:outline-none active:ring-gray-300 hover:shadow-md">Spoogle Search</button>
-          <button onClick={search} className="bg-blue-100 p-3 rounded-md ring-gray-200 text-sm text-gray-800 hover:ring-1 focus:outline-none active:ring-gray-300 hover:shadow-md">I am Feeling Lucky</button>
+          <button onClick={Search} className="bg-blue-100 p-3 rounded-md ring-gray-200 text-sm text-gray-800 hover:ring-1 focus:outline-none active:ring-gray-300 hover:shadow-md">Spoogle Search</button>
+          <button onClick={Search} className="bg-blue-100 p-3 rounded-md ring-gray-200 text-sm text-gray-800 hover:ring-1 focus:outline-none active:ring-gray-300 hover:shadow-md">I am Feeling Lucky</button>
         </div>
       </form>
       <Footer />
